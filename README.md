@@ -14,7 +14,9 @@ along with the explanation, validation and importance of each stage of the propo
 
 **Dataset**
 
-```Folder- datasets```
+```batch
+Folder - datasets
+```
 
 We have taken two different types of datasets. One medical data (resting-state fMRI) and another Hyperspectral Images. 
 
@@ -62,13 +64,14 @@ Comparision of our method to state-of-the-art -> run the file named ``Mainfile_r
 
 If you use our work and codes for the further research then please cite the paper [[Efficient_STTM]](https://arxiv.org/pdf/2002.05079.pdf).
 <details><summary> BibTeX </summary><pre>
-@misc{kour2020efficient,
+@misc{kour2021efficient,
       title={Efficient Structure-preserving Support Tensor Train Machine}, 
       author={Kirandeep Kour and Sergey Dolgov and Martin Stoll and Peter Benner},
-      year={2020},
+      year={2021},
       eprint={2002.05079},
       archivePrefix={arXiv},
       primaryClass={cs.LG}
+}
 }</pre></details>
 
 If you have any query/suggestion, kindly write to [Kirandeep Kour](https://www.mpi-magdeburg.mpg.de/person/59949/842836) at kour@mpi-magdeburg.mpg.de.
