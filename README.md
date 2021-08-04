@@ -44,17 +44,17 @@ Libraries:
 Each folder presents results for each step of algorithm, presented in paper. 
 
 <p float="left">
-<img src="https://github.com/mpimd-csc/Efficient_STTM/blob/master/Figure/ttvsttsvd.png" width="200">
-<img src="https://github.com/mpimd-csc/Efficient_STTM/blob/master/Figure/ttcp_vs_ttcpsvd.png" width="200">
-<img src="https://github.com/mpimd-csc/Efficient_STTM/blob/master/Figure/ttsvd_vs_ttcpsvd.png" width="200">
-<img src="https://github.com/mpimd-csc/Efficient_STTM/blob/master/Figure/ttcp-ne_vs_ttcp-svd-ne.png" width="200">
+<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/ttvsttsvd.png" width="200">
+<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/ttcp_vs_ttcpsvd.png" width="200">
+<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/ttsvd_vs_ttcpsvd.png" width="200">
+<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/ttcp-ne_vs_ttcp-svd-ne.png" width="200">
 </p>
 
 
 Comparision of our method to state-of-the-art -> run the file named ``Mainfile_results.m`` in the 5th folder. 
 
 <p align="center">
-<img src="https://github.com/mpimd-csc/Efficient_STTM/blob/master/Figure/final_result_ADNI.png" width="400">
+<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/final_result_ADNI.png" width="400">
 </p>
 
 
