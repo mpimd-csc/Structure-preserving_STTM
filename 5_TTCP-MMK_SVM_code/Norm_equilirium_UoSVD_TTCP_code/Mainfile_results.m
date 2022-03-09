@@ -12,7 +12,7 @@ addpath(genpath('../../Toolboxes/TT-Toolbox-master_UoSVD'))
 addpath(genpath('../../Toolboxes/libsvm-master/'))
 
 %% HSI_indian data
- datatype = 'hsi_indiana';
+ datatype = 'adni';
 
 switch datatype
     %% HSI Indiana dataset
@@ -114,7 +114,7 @@ dimn = size(X{1});
 % Repeat t times with k-fold cross validation 
 t = 1; % number of repitition of whole procedure
 global l % the rank has been defined as a global variable
-for l = 1:10
+for l = 4
 [data_TT,~] = TT_dec(X,l,eps); %TT factorization of input 
 
 
@@ -128,7 +128,7 @@ R2 = l;
 [CVofTTCP_ADNI, CVofTTCP_ADNI(l),trainTIMEofTTCP_ADNI] = KTTCPMain_lib(X,label,l,TT_CP_data,t);
 
 end
-
+return
 l = 1:1:10;
 save('CVofTTCP_ADNI.mat','CVofTTCP_ADNI') % mat file for accuracy output
 idxmax1 = find(CVofTTCP_ADNI == max(CVofTTCP_ADNI)); % maximum accuracy

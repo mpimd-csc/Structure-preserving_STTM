@@ -23,8 +23,8 @@ a=cumsum(c);
 
 c1=-8;     % var5
 c2=8;
-g1=-2;     % var6
-g2=10;
+g1=-8;     % var6
+g2=8;
 
 acc=0;
 counttimetr=0;                                                                  % Training time

@@ -28,10 +28,10 @@ clc;
 N=size(X,1);                                                                    % Row is data number
 c=ones(1,N);  
 a=cumsum(c);
-c1=-3;                                                                 
-c2=-3;
-g1=5;
-g2=5;
+c1=-8;                                                                 
+c2=8;
+g1=-8;
+g2=8;
 acc=0;
 counttimetr=0;                                                                  % Training time
 counttimete=0;                                                                  % Test time                                                       % The rank of tensor decomposition

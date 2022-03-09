@@ -18,10 +18,10 @@ n=size(X,1);                                                                    
 c=ones(1,n);  
 a=cumsum(c);
 
-c1=-1;    
-c2=1;
-g1=-1;   
-g2=1;
+c1=-8;    
+c2=8;
+g1=-8;   
+g2=8;
 
 acc=0;
 counttimetr=0;                                                                  % Training time
