@@ -104,8 +104,8 @@ for c1=1:class_num-1
         validdata=TT_valid;
        
         % training and validation start
-        sigmarange =[0.1 1 10 100 1000];
-        Crange = [1e-3 1e-2 1e-1 1e-0 1e1 1e2 1e3];
+        log2sigmarange = [-8:1:8];
+        log2Crange = [-8:1:8];
         for sigma_i = 1:size(sigmarange,2)
             sigma=sigmarange(sigma_i);
             tic
@@ -228,8 +228,8 @@ for c1=1:class_num-1
         validdata=TT_valid;
        
         % training and validation start
-        sigmarange =[0.1 1 10 100 1000];
-        Crange = [1e-3 1e-2 1e-1 1e-0 1e1 1e2 1e3];
+        log2sigmarange = [-8:1:8];
+        log2Crange = [-8:1:8];
         for sigma_i = 1:size(sigmarange,2)
             sigma=sigmarange(sigma_i);
             tic
@@ -351,8 +351,8 @@ for c1=1:class_num-1
         validdata=TT_valid;
        
         % training and validation start
-        sigmarange =[0.1 1 10 100 1000];
-        Crange = [1e-3 1e-2 1e-1 1e-0 1e1 1e2 1e3];
+        log2sigmarange = [-8:1:8];
+        log2Crange = [-8:1:8];
         for sigma_i = 1:size(sigmarange,2)
             sigma=sigmarange(sigma_i);
             tic
@@ -474,8 +474,8 @@ for c1=1:class_num-1
         validdata=TT_valid;
        
         % training and validation start
-        sigmarange =[0.1 1 10 100 1000];
-        Crange = [1e-3 1e-2 1e-1 1e-0 1e1 1e2 1e3];
+        log2sigmarange = [-8:1:8];
+        log2Crange = [-8:1:8];
         for sigma_i = 1:size(sigmarange,2)
             sigma=sigmarange(sigma_i);
             tic
