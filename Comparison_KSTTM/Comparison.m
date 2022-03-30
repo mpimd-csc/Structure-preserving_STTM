@@ -4,9 +4,6 @@ clear all;
 clc;
 
 addpath('KSTTM-master_comparison')
-addpath('cvx-a64')
-
-
 
 
 % some parameters in VBMF  d{i} = VBMF(Y, cacb, sigma2);
@@ -104,17 +101,17 @@ for c1=1:class_num-1
         validdata=TT_valid;
        
         % training and validation start
-        log2sigmarange = [-8:1:8];
-        log2Crange = [-8:1:8];
+        sigmarange =[-8:1:8];
+        Crange = [-8:1:8];
         for sigma_i = 1:size(sigmarange,2)
-            sigma=sigmarange(sigma_i);
+            sigma=2^sigmarange(sigma_i);
             tic
             [ K] = kernel_mat( X, N,d,sigma,weight,flag);
             fprintf('kernel matrix costs time is   ')
             toc
             for C_i = 1:size(Crange,2)
-                sigma=sigmarange(sigma_i);
-                C=Crange(C_i);
+                sigma=2^sigmarange(sigma_i);
+                C=2^Crange(C_i);
                 [ alpha, b] = svm_solver( K, Y, C, N);
                 % for validation
                 tic
@@ -149,6 +146,7 @@ for c1=1:class_num-1
         end
     end
 end
+Accuracy_ADNI = max(1-min(test_error))
     case 'ADHD'
         load ADHD_mainset.mat
         
@@ -228,17 +226,17 @@ for c1=1:class_num-1
         validdata=TT_valid;
        
         % training and validation start
-        log2sigmarange = [-8:1:8];
-        log2Crange = [-8:1:8];
+        sigmarange =[-8:1:8];
+        Crange = [-8:1:8];
         for sigma_i = 1:size(sigmarange,2)
-            sigma=sigmarange(sigma_i);
+            sigma=2^sigmarange(sigma_i);
             tic
             [ K] = kernel_mat( X, N,d,sigma,weight,flag);
             fprintf('kernel matrix costs time is   ')
             toc
             for C_i = 1:size(Crange,2)
-                sigma=sigmarange(sigma_i);
-                C=Crange(C_i);
+                sigma=2^sigmarange(sigma_i);
+                C=2^Crange(C_i);
                 [ alpha, b] = svm_solver( K, Y, C, N);
                 % for validation
                 tic
@@ -273,6 +271,7 @@ for c1=1:class_num-1
         end
     end
 end
+Accuracy_ADHD = max(1-min(test_error))
     case 'HSI_salines'
         load HSI_Salines.mat
 % stacking all tensors together 
@@ -351,17 +350,17 @@ for c1=1:class_num-1
         validdata=TT_valid;
        
         % training and validation start
-        log2sigmarange = [-8:1:8];
-        log2Crange = [-8:1:8];
+        sigmarange =[-8:1:8];
+        Crange = [-8:1:8];
         for sigma_i = 1:size(sigmarange,2)
-            sigma=sigmarange(sigma_i);
+            sigma=2^sigmarange(sigma_i);
             tic
             [ K] = kernel_mat( X, N,d,sigma,weight,flag);
             fprintf('kernel matrix costs time is   ')
             toc
             for C_i = 1:size(Crange,2)
-                sigma=sigmarange(sigma_i);
-                C=Crange(C_i);
+                sigma=2^sigmarange(sigma_i);
+                C=2^Crange(C_i);
                 [ alpha, b] = svm_solver( K, Y, C, N);
                 % for validation
                 tic
@@ -396,6 +395,8 @@ for c1=1:class_num-1
         end
     end
 end
+Accuracy_salines = max(1-min(test_error))
+
     case 'HSI_Indiana'
         load HSI_Indiana.mat
 % stacking all tensors together 
@@ -474,17 +475,17 @@ for c1=1:class_num-1
         validdata=TT_valid;
        
         % training and validation start
-        log2sigmarange = [-8:1:8];
-        log2Crange = [-8:1:8];
+        sigmarange =[-8:1:8];
+        Crange = [-8:1:8];
         for sigma_i = 1:size(sigmarange,2)
-            sigma=sigmarange(sigma_i);
+            sigma=2^sigmarange(sigma_i);
             tic
             [ K] = kernel_mat( X, N,d,sigma,weight,flag);
             fprintf('kernel matrix costs time is   ')
             toc
             for C_i = 1:size(Crange,2)
-                sigma=sigmarange(sigma_i);
-                C=Crange(C_i);
+                sigma=2^sigmarange(sigma_i);
+                C=2^Crange(C_i);
                 [ alpha, b] = svm_solver( K, Y, C, N);
                 % for validation
                 tic
@@ -519,4 +520,5 @@ for c1=1:class_num-1
         end
     end
 end
+Accuracy_Indiana = max(1-min(test_error))
 end% end for switch 
