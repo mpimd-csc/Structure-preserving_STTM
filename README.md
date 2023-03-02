@@ -58,7 +58,7 @@ Comparision of our method to state-of-the-art -> run the file named ``Mainfile_r
 
 **Cite As**
 
-If you use our work and codes for the further research then please cite the paper [[Efficient_STTM]](https://arxiv.org/pdf/2002.05079.pdf).
+If you use our work and codes for the further research then please cite the paper [[Efficient_STTM]](https://www.jmlr.org/papers/volume24/20-1310/20-1310.pdf).
 <details><summary> BibTeX </summary><pre>
 @article{JMLR:v24:20-1310,
   author  = {Kirandeep Kour and Sergey Dolgov and Martin Stoll and Peter Benner},
