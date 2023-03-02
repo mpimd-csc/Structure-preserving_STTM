@@ -11,7 +11,7 @@
 addpath(genpath('../../Toolboxes/TT-Toolbox-master_UoSVD'))
 addpath(genpath('../../Toolboxes/libsvm-master/'))
 
-%% HSI_indian data
+
  datatype = 'adni';
 
 switch datatype

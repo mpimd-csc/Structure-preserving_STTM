@@ -1,7 +1,7 @@
 # Efficient Structure-preserving Support Tensor Train Machine
 
 This repository contains MATLAB files for the implementation of work proposed in the paper
- [Efficient Structure-preserving Support Tensor Train Machine](https://arxiv.org/pdf/2002.05079.pdf).
+ [Efficient Structure-preserving Support Tensor Train Machine](https://www.jmlr.org/papers/volume24/20-1310/20-1310.pdf).
 
 **Intro** 
 
@@ -44,18 +44,14 @@ Libraries:
 Each folder presents results for each step of algorithm, presented in paper. 
 
 <p float="left">
-<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/ttvsttsvd.png" width="200">
-<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/ttcp_vs_ttcpsvd.png" width="200">
-<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/ttsvd_vs_ttcpsvd.png" width="200">
-<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/ttcp-ne_vs_ttcp-svd-ne.png" width="200">
+<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/CI95_TT-uTT_ADNI.png" width="200">
+<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/CI95_TT-TTCP_ADNI.png" width="200">
+<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/CI95_TTCP-TTCPe_ADNI.png" width="200">
+<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/CI95_TTCPe-uTTCPe_ADNI.png" width="200">
 </p>
 
 
 Comparision of our method to state-of-the-art -> run the file named ``Mainfile_results.m`` in the 5th folder. 
-
-<p align="center">
-<img src="https://github.com/mpimd-csc/Structure-preserving_STTM/blob/main/Figure/final_result_ADNI.png" width="400">
-</p>
 
 
 
@@ -64,13 +60,15 @@ Comparision of our method to state-of-the-art -> run the file named ``Mainfile_r
 
 If you use our work and codes for the further research then please cite the paper [[Efficient_STTM]](https://arxiv.org/pdf/2002.05079.pdf).
 <details><summary> BibTeX </summary><pre>
-@misc{kour2021efficient,
-      title={Efficient Structure-preserving Support Tensor Train Machine}, 
-      author={Kirandeep Kour and Sergey Dolgov and Martin Stoll and Peter Benner},
-      year={2021},
-      eprint={2002.05079},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@article{JMLR:v24:20-1310,
+  author  = {Kirandeep Kour and Sergey Dolgov and Martin Stoll and Peter Benner},
+  title   = {Efficient Structure-preserving Support Tensor Train Machine},
+  journal = {Journal of Machine Learning Research},
+  year    = {2023},
+  volume  = {24},
+  number  = {4},
+  pages   = {1--22},
+  url     = {http://jmlr.org/papers/v24/20-1310.html}
 }
 }</pre></details>
 
